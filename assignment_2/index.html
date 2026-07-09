@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Resume Builder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f5a6fdd7d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+
+    <h1>Interactive Resume Builder</h1>
+
+    <p>Create your professional resume in real time.</p>
+
+</header>
+
+<div class="progress-container">
+
+    <div id="progressBar"></div>
+
+</div>
+
+<div class="container">
+
+<!--================ LEFT SIDE =================-->
+
+<div class="form-section">
+
+<h2>Personal Information</h2>
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="phone" placeholder="Phone Number">
+
+<textarea id="summary" placeholder="Profile Summary"></textarea>
+
+<h2>Education</h2>
+
+<div id="educationContainer">
+
+<div class="education-item">
+
+<input type="text" class="education" placeholder="Degree">
+
+</div>
+
+</div>
+
+<button id="addEducation">
+
+Add Education
+
+</button>
+
+<h2>Experience</h2>
+
+<div id="experienceContainer">
+
+<div class="experience-item">
+
+<input type="text" class="experience" placeholder="Experience">
+
+</div>
+
+</div>
+
+<button id="addExperience">
+
+Add Experience
+
+</button>
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<label><input type="checkbox" value="HTML">HTML</label>
+
+<label><input type="checkbox" value="CSS">CSS</label>
+
+<label><input type="checkbox" value="JavaScript">JavaScript</label>
+
+<label><input type="checkbox" value="Java">Java</label>
+
+<label><input type="checkbox" value="Python">Python</label>
+
+<label><input type="checkbox" value="React">React</label>
+
+<label><input type="checkbox" value="Node JS">Node JS</label>
+
+<label><input type="checkbox" value="SQL">SQL</label>
+
+<label><input type="checkbox" value="Power BI">Power BI</label>
+
+<label><input type="checkbox" value="Git">Git</label>
+
+</div>
+
+<div class="buttons">
+
+<button id="clearBtn">
+
+Clear Form
+
+</button>
+
+<button id="downloadBtn">
+
+Download PDF
+
+</button>
+
+</div>
+
+</div>
+
+<!--================ RIGHT SIDE =================-->
+
+<div class="resume-section">
+
+<div class="resume">
+
+<div class="resume-header">
+
+<div class="avatar">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<h1 id="previewName">
+
+Your Name
+
+</h1>
+
+<p id="previewEmail">
+
+Email
+
+</p>
+
+<p id="previewPhone">
+
+Phone
+
+</p>
+
+</div>
+
+<div class="resume-box">
+
+<h2>
+
+Profile
+
+</h2>
+
+<p id="previewSummary">
+
+Your profile summary will appear here.
+
+</p>
+
+</div>
+
+<div class="resume-box">
+
+<h2>
+
+Education
+
+</h2>
+
+<ul id="previewEducation">
+
+<li>
+
+No Education Added
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="resume-box">
+
+<h2>
+
+Experience
+
+</h2>
+
+<ul id="previewExperience">
+
+<li>
+
+No Experience Added
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="resume-box">
+
+<h2>
+
+Skills
+
+</h2>
+
+<div id="previewSkills">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
