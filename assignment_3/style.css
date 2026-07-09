@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px;
+}
+
+.internships{
+
+    width:100%;
+    max-width:1200px;
+
+    text-align:center;
+}
+
+.internships h1{
+
+    color:white;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#eee;
+    margin-bottom:45px;
+    font-size:18px;
+}
+
+.container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    position:relative;
+
+    transition:.4s;
+
+    overflow:hidden;
+}
+
+.card:hover{
+
+    transform:translateY(-15px) scale(1.03);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+.tag{
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    background:#ff9800;
+
+    color:white;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+}
+
+.icon{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+
+    color:#5a4bff;
+
+    margin-bottom:20px;
+
+    transition:.4s;
+}
+
+.card:hover .icon{
+
+    transform:rotate(360deg);
+}
+
+.card h2{
+
+    color:white;
+
+    margin-bottom:20px;
+}
+
+.card ul{
+
+    list-style:none;
+
+    text-align:left;
+
+    margin-bottom:25px;
+}
+
+.card ul li{
+
+    color:white;
+
+    padding:8px 0;
+
+    font-size:15px;
+}
+
+.card a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:white;
+
+    color:#5a4bff;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.card a:hover{
+
+    background:#ff9800;
+
+    color:white;
+
+    transform:scale(1.08);
+}
+
+@media(max-width:768px){
+
+    .internships h1{
+
+        font-size:35px;
+    }
+
+    .subtitle{
+
+        font-size:15px;
+    }
+}
