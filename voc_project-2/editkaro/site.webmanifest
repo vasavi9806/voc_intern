@@ -1,0 +1,10 @@
+{
+  "name": "Editkaro.in",
+  "short_name": "Editkaro",
+  "description": "Social media marketing and video editing agency.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0b0c0e",
+  "theme_color": "#0b0c0e",
+  "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
